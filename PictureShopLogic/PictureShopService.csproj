@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <AssemblyName>PictureShopService</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PictureShopDataAccessContracts\PictureShopEntity.csproj" />
+    <ProjectReference Include="..\PictureShopRepository\PictureShopRepository.csproj" />
+  </ItemGroup>
+
+</Project>
