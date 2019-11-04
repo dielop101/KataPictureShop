@@ -6,7 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\PictureShopDataAccessContracts\PictureShopEntity.csproj" />
+    <ProjectReference Include="..\PictureShopEntity\PictureShopEntity.csproj" />
     <ProjectReference Include="..\PictureShopRepository\PictureShopRepository.csproj" />
   </ItemGroup>
 

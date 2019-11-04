@@ -10,10 +10,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\PictureShopDataAccessContracts\PictureShopEntity.csproj" />
     <ProjectReference Include="..\PictureShopDataAccess\PictureShopDataAccess.csproj" />
-    <ProjectReference Include="..\PictureShopLogic\PictureShopService.csproj" />
+    <ProjectReference Include="..\PictureShopEntity\PictureShopEntity.csproj" />
     <ProjectReference Include="..\PictureShopRepository\PictureShopRepository.csproj" />
+    <ProjectReference Include="..\PictureShopService\PictureShopService.csproj" />
   </ItemGroup>
 
 </Project>
