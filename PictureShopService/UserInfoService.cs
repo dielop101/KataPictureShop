@@ -1,4 +1,6 @@
 ﻿using PictureShopDataAccessContracts;
+using PictureShopService.Dto;
+using PictureShopService.Interface;
 
 namespace PictureShopService
 {

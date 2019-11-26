@@ -2,11 +2,12 @@
 
 namespace PictureShopDataAccess
 {
-    public class Context
+    public static class Context
     {
-        public void DoConnectionAndPetition()
+        public static bool DoConnectionAndPetition()
         {
             Thread.Sleep(5000);
+            return true;
         }
     }
 }
