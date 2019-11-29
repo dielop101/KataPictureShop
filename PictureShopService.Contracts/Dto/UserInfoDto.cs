@@ -1,4 +1,4 @@
-﻿namespace PictureShopService.Dto
+﻿namespace PictureShopService.Contracts.Dto
 {
     public class UserInfoDto
     {

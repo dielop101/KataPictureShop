@@ -1,13 +1,14 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <AssemblyName>PictureShopService</AssemblyName>
+    <AssemblyName>PictureShopService.Impl</AssemblyName>
   </PropertyGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\PictureShopEntity\PictureShopEntity.csproj" />
     <ProjectReference Include="..\PictureShopRepository\PictureShopRepository.csproj" />
+    <ProjectReference Include="..\PictureShopService.Contracts\PictureShopService.Contracts.csproj" />
   </ItemGroup>
 
 </Project>

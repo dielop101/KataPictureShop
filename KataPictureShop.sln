@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.28917.182
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KataPictureShop", "KataPictureShop\KataPictureShop.csproj", "{E648D0C0-BFF9-424A-9E0C-9E316A5475FC}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{11D64627-F5CC-4C16-949D-D36EDD0D4EDA}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{BDAA77C0-4B8B-423E-9D93-5A8CD94B54DC}"
@@ -19,7 +17,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentatio
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PictureShopEntity", "PictureShopEntity\PictureShopEntity.csproj", "{23D68B0E-DE50-4951-808E-A9ED1EEB0035}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PictureShopService", "PictureShopService\PictureShopService.csproj", "{DBA6A636-1EE0-4386-BB02-C7FEF4608B4E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PictureShopService.Impl", "PictureShopService\PictureShopService.Impl.csproj", "{DBA6A636-1EE0-4386-BB02-C7FEF4608B4E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KataPictureShopWebAPI", "KataPictureShopWebAPI\KataPictureShopWebAPI.csproj", "{DF7382DF-9BB9-4A26-8AE6-50533E8E783F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PictureShopService.Contracts", "PictureShopService.Contracts\PictureShopService.Contracts.csproj", "{C0003254-75E0-4B51-809B-5D160CC5D3C1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,10 +29,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{E648D0C0-BFF9-424A-9E0C-9E316A5475FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E648D0C0-BFF9-424A-9E0C-9E316A5475FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E648D0C0-BFF9-424A-9E0C-9E316A5475FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E648D0C0-BFF9-424A-9E0C-9E316A5475FC}.Release|Any CPU.Build.0 = Release|Any CPU
 		{F4A8BD0D-9065-4761-AE2E-8E15F9995A19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{F4A8BD0D-9065-4761-AE2E-8E15F9995A19}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F4A8BD0D-9065-4761-AE2E-8E15F9995A19}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -47,16 +45,25 @@ Global
 		{DBA6A636-1EE0-4386-BB02-C7FEF4608B4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DBA6A636-1EE0-4386-BB02-C7FEF4608B4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DBA6A636-1EE0-4386-BB02-C7FEF4608B4E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF7382DF-9BB9-4A26-8AE6-50533E8E783F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF7382DF-9BB9-4A26-8AE6-50533E8E783F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF7382DF-9BB9-4A26-8AE6-50533E8E783F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF7382DF-9BB9-4A26-8AE6-50533E8E783F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0003254-75E0-4B51-809B-5D160CC5D3C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0003254-75E0-4B51-809B-5D160CC5D3C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0003254-75E0-4B51-809B-5D160CC5D3C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0003254-75E0-4B51-809B-5D160CC5D3C1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{E648D0C0-BFF9-424A-9E0C-9E316A5475FC} = {DE1C63A8-8F33-43EE-BF44-653AF46F1FA7}
 		{F4A8BD0D-9065-4761-AE2E-8E15F9995A19} = {11D64627-F5CC-4C16-949D-D36EDD0D4EDA}
 		{0C233598-E9D3-4042-8052-44C6A883516F} = {79FD7097-EAE3-4D57-9452-F96E08A4DEFF}
 		{23D68B0E-DE50-4951-808E-A9ED1EEB0035} = {11D64627-F5CC-4C16-949D-D36EDD0D4EDA}
 		{DBA6A636-1EE0-4386-BB02-C7FEF4608B4E} = {BDAA77C0-4B8B-423E-9D93-5A8CD94B54DC}
+		{DF7382DF-9BB9-4A26-8AE6-50533E8E783F} = {DE1C63A8-8F33-43EE-BF44-653AF46F1FA7}
+		{C0003254-75E0-4B51-809B-5D160CC5D3C1} = {BDAA77C0-4B8B-423E-9D93-5A8CD94B54DC}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E4ED7C04-8CCD-4361-A7CF-A48491EEA48A}

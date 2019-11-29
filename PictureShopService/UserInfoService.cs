@@ -1,8 +1,10 @@
-﻿using PictureShopDataAccessContracts;
-using PictureShopService.Dto;
-using PictureShopService.Interface;
+﻿using System.Collections.Generic;
+using PictureShopDataAccessContracts;
+using PictureShopEntity;
+using PictureShopService.Contracts.Dto;
+using PictureShopService.Contracts.Interface;
 
-namespace PictureShopService
+namespace PictureShopService.Impl
 {
     public class UserInfoService : IUserInfoService
     {
@@ -12,15 +14,32 @@ namespace PictureShopService
             _userInfoData = userInfoData;
         }
 
+        public IEnumerable<UserInfoDto> GetAllUsers()
+        {
+            var usersInfoData = _userInfoData.GetAllUsers();
+
+            foreach (var userInfoData in usersInfoData)
+            {
+                yield return MapEntityToDto(userInfoData);
+            }
+        }
+
         public UserInfoDto GetUserInfoById(int id)
         {
-            var userInfoModel = _userInfoData.GetUserInfoById(id);
+            var userInfoData = _userInfoData.GetUserInfoById(id);
 
+            if (userInfoData is null) return new UserInfoDto();
+
+            return MapEntityToDto(userInfoData);
+        }
+
+        private UserInfoDto MapEntityToDto(UserInfo userInfoData)
+        {
             return new UserInfoDto()
             {
-                Id = userInfoModel.Id,
-                Name = userInfoModel.Name,
-                Surname = userInfoModel.Surname
+                Id = userInfoData.Id,
+                Name = userInfoData.Name,
+                Surname = userInfoData.Surname
             };
         }
     }
