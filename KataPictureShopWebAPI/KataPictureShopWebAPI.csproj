@@ -19,7 +19,7 @@
     <ProjectReference Include="..\PictureShopEntity\PictureShopEntity.csproj" />
     <ProjectReference Include="..\PictureShopRepository\PictureShopRepository.csproj" />
     <ProjectReference Include="..\PictureShopService.Contracts\PictureShopService.Contracts.csproj" />
-    <ProjectReference Include="..\PictureShopService\PictureShopService.Impl.csproj" />
+    <ProjectReference Include="..\PictureShopService.Impl\PictureShopService.Impl.csproj" />
   </ItemGroup>
 
 </Project>
